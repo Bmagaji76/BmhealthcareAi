@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Healthcare Assistant</title>
-    <link rel="stylesheet" href="static/style.css">
+    <title>BM Healthcare AI</title>
+    <script defer src="script.json"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to AI Healthcare Assistant</h1>
-        <p>Describe your symptoms, and our AI will provide possible diagnoses and prescriptions.</p>
-        <form action="/predict" method="post" enctype="multipart/form-data">
-            <textarea name="user_input" id="user_input" placeholder="Describe your symptoms here..." required></textarea>
-            <div class="voice-controls">
-                <button type="button" onclick="startRecording()">🎙️ Record Voice</button>
-                <button type="button" onclick="stopRecording()">⏹️ Stop Recording</button>
-                <input type="file" name="audio" id="audio" accept="audio/*" hidden>
-            </div>
-            <button type="submit">Get Diagnosis</button>
-        </form>
-    </div>
-    <script src="static/script.js"></script>
+    <h1>BM Healthcare AI - Prescription Assistant</h1>
+    <form id="input-form">
+        <label for="text-input">Enter Symptoms:</label>
+        <textarea id="text-input" rows="4" placeholder="Describe your symptoms..."></textarea>
+        <br>
+        <label for="audio-input">Upload Audio:</label>
+        <input type="file" id="audio-input" accept="audio/*">
+        <br>
+        <button type="submit">Get Prescription</button>
+    </form>
+    <div id="response"></div>
 </body>
 </html>
