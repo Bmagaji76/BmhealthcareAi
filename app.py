@@ -1,6 +1,6 @@
 import os
-os.system("pip install torch")
-import torch
+os.system
+import torch==2.0.1+cpu -f https://download.pytorch.org/whl/cpu.html
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
