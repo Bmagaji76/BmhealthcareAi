@@ -1,4 +1,5 @@
 import os
+os.system("pip install torch")
 import torch
 from flask import Flask, request, jsonify
 from flask_cors import CORS
