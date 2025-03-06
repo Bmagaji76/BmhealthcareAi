@@ -1,0 +1,14 @@
+Flask
+transformers
+torch
+sentencepiece
+gtts
+SpeechRecognition
+pydub
+datasets
+pandas
+requests
+werkzeug
+gunicorn
+flask-cors
+vercel
